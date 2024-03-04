@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        /* Your custom CSS styles */
+        body.theme-black-green {
+            /* Black and green theme styles */
+            background-color: #333;
+            color: #fff;
+        }
+
+        .header {
+            background-color: #28a745; /* Green */
+            color: #fff;
+        }
+
+        .nav-bar {
+            background-color: #333;
+        }
+
+        .footer {
+            background-color: #28a745; /* Green */
+            color: #fff;
+        }
+
+        .btn-toggle-theme {
+            color: #28a745; /* Green */
+        }
+
+        .btn-toggle-theme:hover {
+            color: #333;
+        }
+
+        .skills-card {
+            background-color: #343a40; /* Dark Gray */
+            color: #fff;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skills-box {
+            margin: 10px;
+            text-align: center;
+        }
+
+        .skills-title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .skills-img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .skills-icons {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body class="theme-black-green">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Yuvraj Singh Tomar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <button id="theme-toggle" class="nav-link btn btn-toggle-theme">Toggle Theme</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="container mx-auto my-8">
+    <h1 class="text-3xl font-bold mb-4">Welcome to my portfolio!</h1>
+    <p class="text-lg mb-4">My name is Yuvraj Singh Tomar. I'm a full-stack developer passionate about creating awesome web applications.</p>
+    <div class="social-icons">
+        <a href="https://github.com/yourgithubusername" class="social-icon"><i class="fab fa-github"></i></a>
+        <a href="mailto:yuvrajtomar798@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/yourlinkedinprofile" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/yourinstagramprofile" class="social-icon"><i class="fab fa-instagram"></i></a>
+    </div>
+</section>
+
+
+    <section id="projects" class="container mx-auto my-8">
+        <h2 class="text-2xl font-bold mb-4">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Project 1 -->
+            <div class="border border-gray-300 p-4 rounded">
+                <h3 class="font-bold text-lg">Project 1</h3>
+                <p>Description of Project 1</p>
+                <p><strong>Technology:</strong> HTML, CSS, JavaScript</p>
+            </div>
+            <!-- Project 2 -->
+            <div class="border border-gray-300 p-4 rounded">
+                <h3 class="font-bold text-lg">Project 2</h3>
+                <p>Description of Project 2</p>
+                <p><strong>Technology:</strong> React, Node.js, MongoDB</p>
+            </div>
+            <!-- Add more project cards as needed -->
+        </div>
+    </section>
+    
+    
+
+    <section id="about" class="container mx-auto my-8">
+        <h2 class="text-2xl font-bold mb-4">About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.
+            Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis.</p>
+    </section>
+
+    <section id="education" class="container mx-auto my-8">
+        <h2 class="text-2xl font-bold mb-4">Education</h2>
+        <div class="border border-gray-300 p-4 rounded">
+            <h3 class="font-bold text-lg">10th - MP Board</h3>
+            <p>Year: [Year]</p>
+        </div>
+        <div class="border border-gray-300 p-4 rounded mt-4">
+            <h3 class="font-bold text-lg">12th - MP Board</h3>
+            <p>Year: [Year]</p>
+        </div>
+        <div class="border border-gray-300 p-4 rounded mt-4">
+            <h3 class="font-bold text-lg">Makhanlal Chaturvedi National University of Journalism and Communication,
+                Bhopal University, Bhopal, Madhya Pradesh</h3>
+            <p>Degree: [Degree]</p>
+            <p>Graduation Year: [Year]</p>
+        </div>
+    </section>
+
+    <section id="skills" class="container mx-auto my-8">
+        <div class="skills-section">
+            <div class="skills-header">
+                <h2 class="text-2xl font-bold mb-4">Skills</h2>
+            </div>
+            <div class="skills-container">
+                <div class="skills-box">
+                    <div class="skills-title">
+                        <div class="skills-img">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png"
+                                alt="" class="skills-icons">
+                        </div>
+                        <h3>HTML 5</h3>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-title">
+                        <div class="skills-img">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"
+                                alt="" class="skills-icons">
+                        </div>
+                        <h3>CSS3</h3>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-title">
+                        <div class="skills-img">
+                            <img src="https://swiffyslider.com/assets/img/brandlogos/javascript-1.svg" alt=""
+                                class="skills-icons">
+                        </div>
+                        <h3>JAVASCRIPT</h3>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-title">
+                        <div class="skills-img">
+                            <img src="http://pluspng.com/img-png/nodejs-logo-png-nice-images-collection-node-js-desktop-wallpapers-370.png"
+                                alt="" class="skills-icons">
+                        </div>
+                        <h3>NODE.JS</h3>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-title">
+                        <div class="skills-img">
+                            <img src="https://img.icons8.com/plasticine/100/react.png" alt="" class="skills-icons">
+                        </div>
+                        <h3>REACT</h3>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-title">
+                        <div class="skills-img">
+                            <img src="https://img.icons8.com/color-glass/48/bootstrap.png" alt=""
+                                class="skills-icons">
+                        </div>
+                        <h3>bootstrap</h3>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-title">
+                        <div class="skills-img">
+                            <img src="https://img.icons8.com/color/48/redux.png" alt="" class="skills-icons">
+                        </div>
+                        <h3>Redux</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer text-white text-center py-4">
+        <p>&copy; 2024 Yuvraj Singh Tomar. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="support">
+            <a href="#">Support me</a>
+        </div>
+    </footer>
+    
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <!-- Your custom scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const themeToggle = document.getElementById('theme-toggle');
+            const body = document.body;
+
+            themeToggle.addEventListener('click', function () {
+                if (body.classList.contains('theme-black-green')) {
+                    body.classList.remove('theme-black-green');
+                    body.classList.add('theme-light');
+                } else {
+                    body.classList.remove('theme-light');
+                    body.classList.add('theme-black-green');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
